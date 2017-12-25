@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include "./CityBikeParkingPoint.h"
+#include "./CityBikeParkingPoint.cpp"
 using namespace std;
 
 int main(){

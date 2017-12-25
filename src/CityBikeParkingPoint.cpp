@@ -1,5 +1,4 @@
 #include <iostream>
-#include <tuple>
 #include <vector>
 #include <cassert>
 #include <algorithm>
@@ -42,7 +41,7 @@ class CityBikeParkingPoint{
          * @return int value
          */
         int getNumberOccupiedSpace(){
-            return count_if(blocks.begin(), blocks.end(), [](bool n){return (n==false);} );
+            return count_if(blocks.begin(), blocks.end(), [](bool n){return (!n);} );
         }
 
          /**
