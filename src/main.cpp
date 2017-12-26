@@ -6,6 +6,7 @@ using namespace std;
 
 int main(){
     CityBikeParkingPoint my_object(1,10,0., 0.);
+    CityBikeParkingPoint my_object2(1,10,0., 0.);
 
     cout<< "Number of space "<< my_object.getNumberSpace()<<endl;
 
@@ -16,4 +17,5 @@ int main(){
     double x=my_object.getLongitude();
     double y= my_object.getLatitude();
     printf("Longitude: %f Latitude %f \n", x, y);
+    cout<< "Equals: "<< (my_object==my_object2) <<endl;
 }

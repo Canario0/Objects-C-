@@ -102,4 +102,11 @@ class CityBikeParkingPoint{
         double getDistance(CityBikeParkingPoint point){
             return 0;
         }
+
+        bool operator ==(CityBikeParkingPoint other){
+            if( longitude == other.getLongitude() && latitude == other.getLatitude()){
+                return true;
+            }
+            return false;
+        }
 };
